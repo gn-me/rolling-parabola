@@ -46,10 +46,11 @@ function draw() {
         endShape();
     }
 
-    //draws horizontal
+    //draws horizontal and vertical
     stroke(100);
     strokeWeight(1);
     line(-width / 2, 0, width / 2, 0);
+    line(0, -height / 2, 0, height / 2);
 
     // transating and rotating everything
     translate(50 * arcLength(t), 0);
