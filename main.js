@@ -22,8 +22,8 @@ function setup() {
     diretcrixToggle = createCheckbox("Show Directrix", false);
     diretcrixToggle.position(100, windowHeight - 190);
 
-    directrixPathToggle = createCheckbox("Show Directrix Path", false);
-    directrixPathToggle.position(100, windowHeight - 230);
+    //directrixPathToggle = createCheckbox("Show Directrix Path", false);
+    //directrixPathToggle.position(100, windowHeight - 230);
 }
 
 function draw() {
@@ -55,7 +55,7 @@ function draw() {
     }
 
     // diretrix path
-
+    /*
     if (directrixPathToggle.checked()) {
         stroke(255, 0, 234, 40);
         strokeWeight(1);
@@ -78,7 +78,9 @@ function draw() {
 
             line(50*X1, 50*Y1, 50*X2, 50*Y2);
         }
+        
     }
+    */
 
     //draws horizontal and vertical
     stroke(100);
@@ -158,5 +160,5 @@ function windowResized() { // makes sure the slider and toggles fit whatever the
     focusToggle.position(100, windowHeight - 110);
     pathToggle.position(100, windowHeight - 150);
 
-    directrixPathToggle.position(100, windowHeight - 230);
+    //directrixPathToggle.position(100, windowHeight - 230);
 }
